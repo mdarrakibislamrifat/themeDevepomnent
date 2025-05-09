@@ -1,0 +1,247 @@
+/* ============================
+Theme Name: WordPress Learning
+Theme URI: #
+Author: Rakib Islam Rifat
+Author URI: https://rifat-portfolio.surge.sh/
+Version: 1.0.0
+Description: A WordPress learning theme
+Text Domain: wordpress-learning
+Tags: one-column, two-columns, right-sidebar, left-sidebar, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, sticky-post, threaded-comments, translation-ready
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+======================================== */
+
+/* ---------------
+  Reset & Basics
+--------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+a {
+  color: #0073aa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005177;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* ---------------
+  Layout
+--------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* ---------------
+  Header
+--------------- */
+.site-header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.site-branding {
+  margin-bottom: 15px;
+}
+
+.site-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.site-description {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* ---------------
+  Navigation
+--------------- */
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-navigation li {
+  margin-right: 20px;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 5px 0;
+}
+
+/* ---------------
+  Content
+--------------- */
+.site-main {
+  margin-bottom: 40px;
+}
+
+article {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.entry-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entry-meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.post-thumbnail {
+  margin-bottom: 20px;
+}
+
+.post-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.entry-content {
+  margin-bottom: 20px;
+}
+
+.entry-content p {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #0073aa;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.read-more:hover {
+  background-color: #005177;
+  color: #fff;
+}
+
+/* Pagination */
+.pagination {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.pagination .nav-links {
+  display: inline-block;
+}
+
+.pagination .page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.pagination .current {
+  background-color: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+}
+
+/* Single Post */
+.post-navigation {
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat-links,
+.tags-links {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ---------------
+  Footer
+--------------- */
+.site-footer {
+  background-color: #222;
+  color: #999;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #aaa;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-widgets {
+  margin-bottom: 20px;
+}
+
+.site-info {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* ---------------
+  Responsive
+--------------- */
+@media (min-width: 768px) {
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-branding {
+    margin-bottom: 0;
+  }
+}
