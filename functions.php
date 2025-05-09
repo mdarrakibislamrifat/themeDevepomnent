@@ -27,3 +27,28 @@ add_action('wp_enqueue_scripts', 'rifat_css_js_file_calling' );
 
 
 
+// Theme function
+function rifat_customization_register($wp_customize){
+    $wp_customize->add_section('rifat_header_area',array(
+        'title'=>__('Header Area','wordpresslearning'),
+        'description'=>'If you interested to update your header area you can do it here'
+    )); 
+
+
+    $wp_customize->add_setting('rifat_logo',array(
+        'default'=>get_bloginfo('template_directory' ).'/img/images.jpg'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,'rifat_logo',array(
+            'label'=>'Logo Uplad',
+            'description'=>'If you interested to update your header area you can do it here',
+            'setting'=> 'rifat_logo',
+            'section'=>'rifat_header_area'
+        )
+    ));
+
+
+}
+
+add_action('customize_register','rifat_customization_register');
